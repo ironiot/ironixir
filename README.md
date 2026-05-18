@@ -1,17 +1,17 @@
 # ironixir
 BEAM-based IoT management software
 
-The business idea centers around building a distributed IoT management, orchestration, monitoring, and security platform using the Erlang/Elixir ecosystem as the foundational runtime architecture. The platform would combine embedded runtimes, distributed supervision, realtime analytics, and fault-tolerant cloud orchestration into a unified system capable of managing large fleets of microcontrollers, edge devices, and industrial embedded systems. The architecture would leverage the unique strengths of the BEAM virtual machine and related technologies to create a resilient, highly concurrent, and security-focused IoT infrastructure.
+The project idea centers around building a distributed IoT management, orchestration, monitoring, and security platform using the Erlang/Elixir ecosystem as the foundational runtime architecture. The platform would combine embedded runtimes, distributed supervision, realtime analytics, and fault-tolerant cloud orchestration into a unified system capable of managing large fleets of microcontrollers, edge devices, and industrial embedded systems. The architecture would leverage the unique strengths of the BEAM virtual machine and related technologies to create a resilient, highly concurrent, and security-focused IoT infrastructure.
 
 At the core of the platform is the idea that every device in the network can be represented as a supervised distributed actor. Rather than treating embedded devices as isolated firmware targets, the system treats them as participants in a larger distributed runtime. This approach fundamentally changes how IoT infrastructure is managed. Instead of relying on fragile polling systems, static dashboards, or centralized monolithic control architectures, the system would use lightweight concurrent processes and distributed messaging to continuously supervise device behavior, enforce operational policies, and respond to anomalies in realtime.
 
 The architecture would primarily revolve around several major technologies within the Erlang and Elixir ecosystem:
 
-* [AtomVM](https://atomvm.org?utm_source=chatgpt.com)
-* [Nerves Project](https://nerves-project.org?utm_source=chatgpt.com)
-* [Phoenix Framework](https://www.phoenixframework.org?utm_source=chatgpt.com)
-* [Phoenix LiveView](https://www.phoenixframework.org/liveview?utm_source=chatgpt.com)
-* [Livebook](https://livebook.dev?utm_source=chatgpt.com)
+* [AtomVM](https://atomvm.org)
+* [Nerves Project](https://nerves-project.org)
+* [Phoenix Framework](https://www.phoenixframework.org)
+* [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html)
+* [Livebook](https://livebook.dev)
 
 The embedded layer of the system would rely heavily on AtomVM. AtomVM is a lightweight implementation of the Erlang virtual machine designed specifically for microcontrollers and constrained devices such as ESP32-class systems. By allowing Erlang or Elixir-style concurrency and messaging semantics to run directly on embedded hardware, AtomVM introduces a fundamentally different programming model into the IoT world. Instead of building firmware entirely around procedural loops, interrupts, and state machines, developers can structure firmware as collections of isolated processes supervised through actor-based concurrency.
 
