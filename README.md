@@ -178,3 +178,4 @@ The resulting platform represents a convergence of:
 
 Rather than treating IoT devices as isolated endpoints, the system treats them as supervised distributed participants within a resilient runtime ecosystem. This transforms IoT infrastructure from static device management into an active, self-monitoring, behaviorally aware distributed system capable of realtime orchestration, anomaly detection, and operational resilience across embedded fleets.
 
+![Highlevel Diagram](./docs/imgs/highlevel-diagram.png)
